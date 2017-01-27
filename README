@@ -1,0 +1,47 @@
+#AwakeLabs_2017CodingChallenge
+Awake Labs Job Interview Coding Challenge for the Software Developer Position in Toronto
+Due Friday January 27, 2017 at 9AM PST
+
+##Website in Python using Flask
+- Python web app works when ran on a localhost
+- Application needs to insert, update and delete data from database
+- Interaction with MySQL Database
+- Design with intent to transfer to MongoDB
+
+##How to migrate code to MongoDB:
+Firstly the differences between MongoDB and MySQL are important to go over. MongoDB is non relational, meaning the 
+order does not matter when it comes to structuring a schema. Whereas, MySQL needs a set structure in the form of a table 
+in order to start creating the database. Meaning it can be limiting when a company needs to evolve the information. 
+MongoDB utilizes a dynamic schema design which gives flexibility in changing the schema as data requirements evolve.
+
+When migrating a database from MySQL to MongoDB the tables are put into blocks that contain the data. The data can be 
+organized in any order and additional data can be concatenated easily. This makes schemas in MongoDB easy and fast to 
+update and add new features
+
+##What the website does and why:
+The create page has three inputs: Hike Name, Hike Location, and Hike Duration (in days). 
+Each page links directly back to the home page using a "Home" button. 
+
+Model View Controller:
+Since this is a simplistic website I decided to write an explanation vrs using images:
+The main page contains links to three other pages: create, update, and delete.
+The user uses the links to go to one of the three pages. Once at the create page, the user enters hike data into the 
+fields. With the data, the model (MySQL database) is changed to reflect the addition of data. The intended purpose of 
+the website is to update the viewing section in update and delete so that the user can view the hikes in the database.
+
+I chose hike data because I love hiking mountains and adventuring outside.
+
+##What would I do with unlimited time to complete this challenge:
+The update page would list all of the hikes in the MySQL Database with update buttons that links deletes the entry and 
+brings the website to the create hike page. The delete page would list all the hikes in the database, a delete button 
+beside each entry would remove the hike entry from the database.
+
+##How I solved tricky problems:
+Since I wanted to challenge myself, I used Flask as I have never used it before: this is the tutorial I followed:
+https://code.tutsplus.com/tutorials/creating-a-web-app-from-scratch-using-python-flask-and-mysql--cms-22972
+
+##Biggest challenge and how I dealt with it:
+My largest challenge with this project was getting the web app to interact with the MySQL Database. Although, I didn't 
+solve my biggest challenge, I learned that searching for syntax in HTML was incredibly helpful for moving in the 
+correct direction. I think my problem is that I am using a new version of python that is difficult to connect to the 
+version of MySQL on my computer.

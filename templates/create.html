@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Awake Labs 2017 Coding Challenge Create Hike Entry</title>
+      <!--Makes page look nice-->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <link href="../templates/create.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="header">
+            <h3 class="text-muted">Awake Labs 2017 Coding Challenge</h3>
+            <nav>
+            <ul class="nav nav-pills pull-right">
+                    <!--Creates a home button, that connects back to the home page-->
+                    <li role="presentation" class="active"><a href="/" title="Back to the Home page"><b>HOME</b></a>
+            </ul>
+            </nav>
+        </div>
+
+      <div class="jumbotron">
+        <h1>Create a Hike Entry</h1>
+          <!--Creates a table for inputting new hike data-->
+        <form class="form-create">
+        <label for="inputHikeName" class="sr-only">Hike Name</label>
+        <input type="hikeName" name="inputHikeName" id="inputHikeName" class="form-control" placeholder="Name of Hike" required autofocus>
+        <label for="inputHikeLocation" class="sr-only">Hike Location</label>
+        <input type="HikeLocation" name="inputHikeLocation" id="inputHikeLocation" class="form-control" placeholder="Hike Location" required autofocus>
+        <label for="inputHikeDuration" class="sr-only">Hike Duration in Days</label>
+        <input type="HikeDuration" name="inputHikeDuration" id="inputHikeDuration" class="form-control" placeholder="Hike Duration (in days)" required>
+            <!--Creates the "Create Hike" button-->
+        <button id="btnCreate" class="btn btn-lg btn-primary btn-block" type="button">Create Hike Entry</button>
+      </form>
+      </div>
+
+
+      <footer class="footer">
+        <p>Tori Koelewyn</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
